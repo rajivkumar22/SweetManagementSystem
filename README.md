@@ -14,11 +14,12 @@ This project implements a complete Sweet Shop Management System following **Test
 ## 📋 Features
 
 ### User Features
-- ✅ User registration and login
-- ✅ Browse available sweets
+- ✅ User registration and login with sweet-themed UI
+- ✅ Browse available sweets with emoji images
 - ✅ Search and filter sweets by name, category, and price range
-- ✅ Purchase sweets (with stock validation)
-- ✅ Responsive and modern UI
+- ✅ Purchase sweets (with stock validation and no-reload experience)
+- ✅ Responsive and modern UI with pastel color scheme
+- ✅ Indian Rupee (₹) currency display with dynamic pricing per sweet
 
 ### Admin Features
 - ✅ Add new sweets
@@ -42,7 +43,9 @@ This project implements a complete Sweet Shop Management System following **Test
 - **Framework**: React 18
 - **Routing**: React Router DOM v6
 - **HTTP Client**: Axios
-- **Styling**: CSS3 with modern gradients and animations
+- **Styling**: CSS3 with modern gradients, animations, and sweet-themed UI
+- **Currency**: Indian Rupee (₹) display
+- **UI Features**: Emoji-based sweet images, pastel color scheme
 
 ## 📁 Project Structure
 
@@ -274,11 +277,13 @@ Content-Type: application/json
 {
   "name": "Chocolate Bar",
   "category": "chocolate",
-  "price": 2.99,
+  "price": 199,
   "quantity": 50,
   "description": "Delicious chocolate"
 }
 ```
+
+**Note:** Prices are in Indian Rupees (₹) and vary dynamically per sweet
 
 #### Update Sweet (Admin Only)
 ```http
@@ -287,9 +292,11 @@ Content-Type: application/json
 
 {
   "name": "Updated Name",
-  "price": 3.49
+  "price": 249
 }
 ```
+
+**Note:** Prices are in Indian Rupees (₹) and can be updated dynamically per sweet
 
 #### Delete Sweet (Admin Only)
 ```http
@@ -351,13 +358,17 @@ To create an admin user, you can either:
 ### Responsive Design
 - Mobile-first approach
 - Adapts to all screen sizes
-- Modern gradient design
+- Modern gradient and pastel color scheme
+- Sweet-themed login with emojis (🍬 Sweet Shop 🍬)
 
 ### User Experience
 - Real-time stock updates
 - Instant search and filtering
 - Success/error notifications
 - Disabled purchase for out-of-stock items
+- Sweet emoji images on each card (🍫🍬🐻🍭🍰🍪)
+- No-reload purchase experience
+- Indian Rupee (₹) currency with dynamic pricing per sweet type
 
 ### Admin Interface
 - Comprehensive CRUD operations
