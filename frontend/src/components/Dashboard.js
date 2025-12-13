@@ -61,7 +61,11 @@ const Dashboard = () => {
     setFilteredSweets(sweets);
   };
 
-  const handlePurchase = async (sweetId, quantity = 1) => {
+  const handlePurchase = async (e, sweetId, quantity = 1) => {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
     try {
       await axios.post(`/api/sweets/${sweetId}/purchase`, { quantity });
       setSuccessMessage('Purchase successful!');
@@ -179,16 +183,17 @@ const Dashboard = () => {
                   )}
                   
                   <div className="sweet-details">
-                    <div className="price">${sweet.price.toFixed(2)}</div>
+                    <div className="price">₹{sweet.price.toFixed(2)}</div>
                     <div className={`stock ${sweet.quantity === 0 ? 'out-of-stock' : ''}`}>
                       {sweet.quantity > 0 ? `${sweet.quantity} in stock` : 'Out of stock'}
                     </div>
                   </div>
                   
                   <button
-                    onClick={() => handlePurchase(sweet._id)}
+                    onClick={(e) => handlePurchase(e, sweet._id)}
                     disabled={sweet.quantity === 0}
                     className="btn btn-purchase"
+                    type="button"
                   >
                     {sweet.quantity === 0 ? 'Out of Stock' : 'Purchase'}
                   </button>

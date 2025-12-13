@@ -179,7 +179,7 @@ const AdminPanel = () => {
                         {sweet.category}
                       </span>
                     </td>
-                    <td>${sweet.price.toFixed(2)}</td>
+                    <td>₹{sweet.price.toFixed(2)}</td>
                     <td className={sweet.quantity === 0 ? 'text-danger' : ''}>
                       {sweet.quantity}
                     </td>

@@ -41,63 +41,63 @@ const seedData = async () => {
       {
         name: 'Milk Chocolate Bar',
         category: 'chocolate',
-        price: 2.99,
+        price: 199,
         quantity: 50,
         description: 'Smooth and creamy milk chocolate'
       },
       {
         name: 'Dark Chocolate Premium',
         category: 'chocolate',
-        price: 3.99,
+        price: 299,
         quantity: 30,
         description: 'Rich 70% dark chocolate bar'
       },
       {
         name: 'Sour Gummy Worms',
         category: 'gummy',
-        price: 1.99,
+        price: 149,
         quantity: 100,
         description: 'Tangy and chewy gummy worms'
       },
       {
         name: 'Rainbow Lollipop',
         category: 'lollipop',
-        price: 0.99,
+        price: 49,
         quantity: 75,
         description: 'Colorful swirl lollipop'
       },
       {
         name: 'Chocolate Chip Cookies',
         category: 'cookie',
-        price: 3.49,
+        price: 249,
         quantity: 25,
         description: 'Freshly baked cookies with chocolate chips'
       },
       {
         name: 'Red Velvet Cake Slice',
         category: 'cake',
-        price: 4.99,
+        price: 399,
         quantity: 10,
         description: 'Rich red velvet cake with cream cheese frosting'
       },
       {
         name: 'Strawberry Candy',
         category: 'candy',
-        price: 1.49,
+        price: 99,
         quantity: 80,
         description: 'Sweet strawberry flavored hard candy'
       },
       {
         name: 'Caramel Delight',
         category: 'other',
-        price: 2.49,
+        price: 179,
         quantity: 40,
         description: 'Soft caramel squares'
       },
       {
         name: 'Out of Stock Item',
         category: 'chocolate',
-        price: 5.99,
+        price: 449,
         quantity: 0,
         description: 'This item is out of stock to test purchase validation'
       }
