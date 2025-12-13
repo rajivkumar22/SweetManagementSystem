@@ -6,7 +6,7 @@ Write-Host "================================" -ForegroundColor Cyan
 # Set environment variables
 $env:NODE_ENV = "test"
 $env:JWT_SECRET = "testsecret123456789"
-$env:MONGODB_URI = "mongodb+srv://Rajivkumar:Rajivkumar@cluster0.5aesp.mongodb.net/sweet_shop_test?retryWrites=true&w=majority"
+# MongoDB URI should be set in .env file as MONGODB_URI_TEST
 
 Write-Host "Environment: $env:NODE_ENV" -ForegroundColor Yellow
 Write-Host "Running tests..." -ForegroundColor Yellow
