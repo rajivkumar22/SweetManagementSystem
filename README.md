@@ -47,7 +47,35 @@ This project implements a complete Sweet Shop Management System following **Test
 - **Currency**: Indian Rupee (₹) display
 - **UI Features**: Emoji-based sweet images, pastel color scheme
 
-## 📁 Project Structure
+## � Application Screenshots
+
+### 1. Login Page
+![Sweet-themed Login Page](./screenshots/login-page.png)
+*Sweet-themed login page with 🍬 emojis, pastel colors, and two-button interface*
+
+### 2. Register Page
+![Registration Form](./screenshots/register-page.png)
+*User registration form with sweet-themed design*
+
+### 3. Dashboard - Admin View
+![Admin Dashboard](./screenshots/dashboard.png)
+*Admin dashboard with welcome message and sweet collection*
+
+### 4. Sweet Cards with Emojis
+![Sweet Cards Display](./screenshots/sweet-cards.png)
+*Sweet cards with emoji images and Indian Rupee (₹) pricing*
+
+### 5. Admin Panel
+![Admin Management Panel](./screenshots/admin-panel.png)
+*Admin panel for CRUD operations with edit, restock, and delete actions*
+
+### 6. User Dashboard
+![User Dashboard View](./screenshots/user-dashboard.png)
+*User view with search, filters, and purchase functionality*
+
+> **Note:** Screenshots show the fully functional application with 20 sweets and sweet-themed UI
+
+## �📁 Project Structure
 
 ```
 SweetManagementSystem/
