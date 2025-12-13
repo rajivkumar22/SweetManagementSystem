@@ -86,6 +86,19 @@ const Dashboard = () => {
     navigate('/admin');
   };
 
+  const getSweetImage = (category) => {
+    const imageMap = {
+      chocolate: '🍫',
+      candy: '🍬',
+      gummy: '🐻',
+      lollipop: '🍭',
+      cake: '🍰',
+      cookie: '🍪',
+      other: '🧁'
+    };
+    return imageMap[category] || '🍬';
+  };
+
   return (
     <div className="dashboard-container">
       <nav className="navbar">
@@ -171,6 +184,9 @@ const Dashboard = () => {
             <div className="sweets-grid">
               {filteredSweets.map((sweet) => (
                 <div key={sweet._id} className="sweet-card">
+                  <div className="sweet-image-display">
+                    {getSweetImage(sweet.category)}
+                  </div>
                   <div className="sweet-header">
                     <h3>{sweet.name}</h3>
                     <span className={`category-badge ${sweet.category}`}>
