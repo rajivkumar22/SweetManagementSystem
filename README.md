@@ -61,13 +61,13 @@ This project implements a complete Sweet Shop Management System following **Test
 ![Admin Dashboard](./screenshots/dashboard.png)
 *Admin dashboard with welcome message and sweet collection*
 
-### 4. Sweet Cards with Emojis
-![Sweet Cards Display](./screenshots/sweet-cards.png)
-*Sweet cards with emoji images and Indian Rupee (₹) pricing*
-
-### 5. Admin Panel
-![Admin Management Panel](./screenshots/admin-panel.png)
+### 4. Admin Panel
+![Admin Management Panel](./screenshots/sweet-cards.png)
 *Admin panel for CRUD operations with edit, restock, and delete actions*
+
+### 5. Sweet Cards with Emojis
+![Sweet Cards Display](./screenshots/admin-panel.png)
+*Sweet cards with emoji images and Indian Rupee (₹) pricing*
 
 ### 6. User Dashboard
 ![User Dashboard View](./screenshots/user-dashboard.png)
