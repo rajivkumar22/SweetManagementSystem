@@ -1,0 +1,29 @@
+{
+  "name": "sweet-shop-backend",
+  "version": "1.0.0",
+  "description": "Sweet Shop Management System Backend API",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose --runInBand",
+    "test:once": "jest --verbose --coverage --runInBand --forceExit",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": ["sweet-shop", "api", "express", "mongodb"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.6.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "express-validator": "^7.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "nodemon": "^3.0.1"
+  }
+}
