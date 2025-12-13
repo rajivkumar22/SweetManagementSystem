@@ -29,13 +29,23 @@ Password: admin123
 
 #### Step 1: Login Page
 1. Open browser → http://localhost:3000
-2. You should see the Login page
-3. **📸 SCREENSHOT 1:** Login page
+2. You should see the sweet-themed login page with:
+   - 🍬 Sweet Shop 🍬 title with gradient colors
+   - "Indulge in Sweetness, One Click Away" tagline
+   - Large sweet emojis: 🍭🧁🍫🍰🍩
+   - Pastel pink/purple background
+   - Two buttons: "🍭 Order Sweets" and "🧁 Manage Shop"
+3. **📸 SCREENSHOT 1:** Sweet-themed login page
 
 #### Step 2: User Dashboard
-1. Login with: **rky1@example.com** / **password123**
-2. You should see the Dashboard with sweets displayed
-3. **📸 SCREENSHOT 2:** Dashboard with all sweets
+1. Click "🍭 Order Sweets" button
+2. Login with: **rky1@example.com** / **password123**
+3. You should see the Dashboard with:
+   - 19 sweets displayed in cards
+   - Each card has emoji image at top (🍫🍬🐻🍭🍰🍪)
+   - Prices in Indian Rupees (₹) - varies by sweet type
+   - Category badges with animations (shine, bounce, glow, wobble)
+4. **📸 SCREENSHOT 2:** Dashboard with all sweets showing emoji images and ₹ prices
 
 #### Step 3: Search Feature
 1. In the search bar, type "chocolate"
@@ -50,17 +60,19 @@ Password: admin123
 
 #### Step 5: Price Filter
 1. Clear all filters
-2. Set "Min Price" = 1
-3. Set "Max Price" = 3
-4. Click "Apply Filters"
-5. **📸 SCREENSHOT 5:** Price filtered results
+2. Set "Min Price" = 100
+3. Set "Max Price" = 200
+4. Click "Search"
+5. **📸 SCREENSHOT 5:** Price filtered results (showing sweets within ₹100-₹200 range)
 
 #### Step 6: Purchase Feature
 1. Find a sweet with quantity > 0
 2. Click "Purchase" button
-3. Alert should show "Purchase successful!"
-4. Quantity should decrease
-5. **📸 SCREENSHOT 6:** Purchase confirmation + updated quantity
+3. Page should NOT reload (smooth update)
+4. Success message appears: "Purchase successful!"
+5. Quantity decreases by 1
+6. Sweet image remains visible
+7. **📸 SCREENSHOT 6:** Purchase success message + updated quantity (no page reload)
 
 #### Step 7: Out of Stock
 1. Scroll to find the sweet with 0 quantity
@@ -92,12 +104,12 @@ Password: admin123
 4. Fill in details:
    - Name: Test Sweet
    - Category: candy
-   - Price: 2.99
+   - Price: 199 (price varies per sweet - enter any value)
    - Quantity: 50
-5. Click "Create"
+5. Click "Add Sweet"
 6. Success message should appear
-7. New sweet should appear in table
-8. **📸 SCREENSHOT 11:** New sweet in table
+7. New sweet should appear in table with the entered price in ₹
+8. **📸 SCREENSHOT 11:** New sweet in table showing ₹ price
 
 #### Step 12: Edit Sweet
 1. Click "Edit" button on any sweet
@@ -188,7 +200,7 @@ Before taking screenshots, verify:
 ### Database
 - [ ] MongoDB Atlas shows "sweet_shop" database
 - [ ] "users" collection has 2 documents
-- [ ] "sweets" collection has 9+ documents
+- [ ] "sweets" collection has 19+ documents (expanded collection)
 
 ---
 
@@ -246,17 +258,18 @@ After taking all screenshots:
 
 ### What You Should See:
 
-✅ Clean, professional UI  
-✅ All sweets displayed in cards  
+✅ Sweet-themed login with 🍬 emojis and pastel colors  
+✅ All 19 sweets displayed in cards with emoji images  
+✅ Prices in Indian Rupees (₹) - dynamic per sweet  
 ✅ Search updates in real-time  
 ✅ Filters work correctly  
-✅ Purchase decreases quantity  
+✅ Purchase decreases quantity without page reload  
 ✅ Out-of-stock items disabled  
 ✅ Admin sees extra button  
-✅ Admin can CRUD sweets  
+✅ Admin can CRUD sweets with custom pricing  
 ✅ Alerts show success/error messages  
 ✅ All tests passing (33/33)  
-✅ Database shows collections  
+✅ Database shows collections with 19 sweets  
 
 ---
 
