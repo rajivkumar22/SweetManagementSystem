@@ -54,23 +54,29 @@ const Login = () => {
     return (
       <div className="auth-container">
         <div className="auth-card">
-          <h2>Sweet Shop Login</h2>
+          <div className="sweet-header">
+            <h1 className="sweet-title">🍬 Sweet Shop 🍬</h1>
+            <p className="sweet-tagline">Indulge in Sweetness, One Click Away</p>
+          </div>
+          <div className="sweet-image-container">
+            <div className="sweet-image">🍭🧁🍫🍰🍩</div>
+          </div>
           <div className="login-type-selection">
             <button 
               className="btn btn-user"
               onClick={() => handleLoginTypeSelect('user')}
             >
-              Login as User
+              🍭 Order Sweets
             </button>
             <button 
               className="btn btn-admin"
               onClick={() => handleLoginTypeSelect('admin')}
             >
-              Login as Admin
+              🧁 Manage Shop
             </button>
           </div>
           <p className="auth-link">
-            Don't have an account? <Link to="/register">Register here</Link>
+            New here? <Link to="/register">Join our sweet community</Link>
           </p>
         </div>
       </div>
@@ -84,7 +90,7 @@ const Login = () => {
         <button className="back-button" onClick={handleBack}>
           ← Back
         </button>
-        <h2>{loginType === 'admin' ? 'Admin Login' : 'User Login'}</h2>
+        <h2>{loginType === 'admin' ? '🧁 Shop Manager Login' : '🍭 Customer Login'}</h2>
         <form onSubmit={handleSubmit} className="auth-form">
           {error && <div className="error-message">{error}</div>}
           
