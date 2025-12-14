@@ -2,7 +2,22 @@
 
 A comprehensive full-stack application for managing a sweet shop with user authentication, inventory management, and admin capabilities.
 
-## 🎯 Project Overview
+## � Live Demo
+
+**🎉 Application is Live and Deployed!**
+
+- **Frontend**: [https://sweet-management-system-zeta.vercel.app](https://sweet-management-system-zeta.vercel.app)
+- **Backend API**: [https://sweetmanagementsystem-evo9.onrender.com](https://sweetmanagementsystem-evo9.onrender.com)
+
+**Test Credentials:**
+- **Regular User**: Create your own account with registration
+- **Admin Access**: `admin@sweetshop.com` / `admin123`
+
+> **Note**: Backend may take 30-60 seconds to wake up on first request (Render free tier cold start)
+
+---
+
+## �🎯 Project Overview
 
 This project implements a complete Sweet Shop Management System following **Test-Driven Development (TDD)** principles, featuring:
 
@@ -499,6 +514,7 @@ I used **GitHub Copilot** as my primary AI assistant throughout the entire devel
   - Designed the two-button login UI concept
   - Decided on state management approach
   - Refined UX flows and interactions
+  - Built Dashboard,Auth,Admin Panel and Register pages 
 
 #### 4. **Documentation**
 - **What AI Did**:
