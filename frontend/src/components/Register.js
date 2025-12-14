@@ -24,9 +24,10 @@ const Register = () => {
       return;
     }
 
-    // Validate password length
-    if (password.length < 6) {
-      setError('Password must be at least 6 characters long');
+    // Validate password strength
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    if (!passwordRegex.test(password)) {
+      setError('Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character (@$!%*?&)');
       return;
     }
 
@@ -50,7 +51,7 @@ const Register = () => {
           {error && <div className="error-message">{error}</div>}
           
           <div className="form-group">
-            <label htmlFor="username">Username</label>
+            <label htmlFor="username">Username <span className="required">*</span></label>
             <input
               type="text"
               id="username"
@@ -63,7 +64,7 @@ const Register = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email <span className="required">*</span></label>
             <input
               type="email"
               id="email"
@@ -75,20 +76,21 @@ const Register = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Password <span className="required">*</span></label>
             <input
               type="password"
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              minLength="6"
-              placeholder="Enter your password"
+              minLength="8"
+              placeholder="Min 8 chars with A-Z, a-z, 0-9, @$!%*?&"
             />
+            <small className="password-hint">Must contain uppercase, lowercase, number & special character</small>
           </div>
 
           <div className="form-group">
-            <label htmlFor="confirmPassword">Confirm Password</label>
+            <label htmlFor="confirmPassword">Confirm Password <span className="required">*</span></label>
             <input
               type="password"
               id="confirmPassword"

@@ -95,7 +95,7 @@ const Login = () => {
           {error && <div className="error-message">{error}</div>}
           
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email <span className="required">*</span></label>
             <input
               type="email"
               id="email"
@@ -107,7 +107,7 @@ const Login = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Password <span className="required">*</span></label>
             <input
               type="password"
               id="password"
